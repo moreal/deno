@@ -1414,7 +1414,7 @@ declare namespace Deno {
      * [`itereateReader`](https://deno.land/std/streams/iterate_reader.ts?s=iterateReader)
      * from
      * [`std/streams/iterate_reader.ts`](https://deno.land/std/streams/iterate_reader.ts)
-     * to turn a `Reader` into an {@linkcode AsyncIterator}.
+     * to turn a `Reader` into an {@linkcode AsyncIterator} .
      */
     read(p: Uint8Array): Promise<number | null>;
   }
@@ -4377,7 +4377,7 @@ declare namespace Deno {
    * const status = await Deno.permissions.query({ name: "read", path: "/etc" });
    * console.log(status.state);
    * ```
-   * 
+   *
    * ```ts
    * const status = Deno.permissions.querySync({ name: "read", path: "/etc" });
    * console.log(status.state);
@@ -4391,7 +4391,7 @@ declare namespace Deno {
    * const status = await Deno.permissions.revoke({ name: "run" });
    * assert(status.state !== "granted")
    * ```
-   * 
+   *
    * ```ts
    * import { assert } from "https://deno.land/std/testing/asserts.ts";
    *
@@ -4409,7 +4409,7 @@ declare namespace Deno {
    *   console.log("'env' permission is denied.");
    * }
    * ```
-   * 
+   *
    * ```ts
    * const status = Deno.permissions.requestSync({ name: "env" });
    * if (status.state === "granted") {
